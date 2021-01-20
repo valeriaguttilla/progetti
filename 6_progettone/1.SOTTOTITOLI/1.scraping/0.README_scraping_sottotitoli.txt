@@ -1,0 +1,3 @@
+
+
+Scraping di sottotitoli di film selezionati dal sito opensubtitles.com per l'ottenimento dei dati su cui impostare l'analisi. 

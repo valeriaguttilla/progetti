@@ -1,0 +1,3 @@
+
+
+Analisi volta a calcolare la complessità dei testi, nel caso specifico dei sottotitoli, attraverso indici custom o presi dalla linguistica.

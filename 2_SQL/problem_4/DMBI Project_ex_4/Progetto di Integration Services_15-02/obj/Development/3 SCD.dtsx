@@ -1,0 +1,3084 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/15/2020 9:21:12 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DOMENICO-PC"
+  DTS:CreatorName="domenico-PC\domenico"
+  DTS:DTSID="{359C9253-C5CE-44AB-8B09-F7F89421C52B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3008.28"
+  DTS:LocaleID="1040"
+  DTS:ObjectName="3 SCD"
+  DTS:PackageType="5"
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{42F04F20-F6CD-4958-9C1B-7C72DA488303}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[apa.di.unipi.it.FoodMart.masterbigdata]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{90B0F8A7-8C3A-4090-9425-21763782FC1A}"
+      DTS:ObjectName="apa.di.unipi.it.FoodMart.masterbigdata">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=apa.di.unipi.it;User ID=masterbigdata;Initial Catalog=FoodMart;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxBkywdd7T02l3Mo1qL2jHwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAcFa0EG3ZAJtEPBf6c5loATyFd/tv4o4uOx6BwlLHwEAAAAAAOgAAAAAIAACAAAACse2sghq0hSmILZbHr+N1nEFgzm45K8HEh3KSJGm46ixAAAAAxYywAQERMA86TbC/l1UnvQAAAALqRnns74q0IGp3BtCzSRNTcm8mHVEIm2Z9nh/pN0UJABLuf7919X792AEDUVaWJRbldCOvA7jj7ZKiWX9WmnIM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[apa.di.unipi.it.FoodMart.masterbigdata 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{76CFC408-EE6E-41F6-A876-16C184C84B3B}"
+      DTS:ObjectName="apa.di.unipi.it.FoodMart.masterbigdata 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=apa.di.unipi.it;User ID=masterbigdata;Initial Catalog=MBD;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxBkywdd7T02l3Mo1qL2jHwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADRaqwVM9XsENh+9osga/ihVDXSQMamN9JU+wrRAyrC5wAAAAAOgAAAAAIAACAAAABngTb8yKh7Mw8VVd66L8/wd+cOkzrHNC/0jJvaeqpHPhAAAABRWCd7g6wAiFvc7p+bVwvpQAAAAFMd6URTkZ0ZzN1RIiV2EGM8gthrCyjKAHfukBJX79pwcKoh0yHgf32ahFUN7R253nzIBduFyb3ruEPIK8IjcSM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[apa.di.unipi.it.FoodMart.masterbigdata 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EF298EC9-166A-484C-B756-B73D5534EF26}"
+      DTS:ObjectName="apa.di.unipi.it.FoodMart.masterbigdata 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=apa.di.unipi.it;User ID=masterbigdata;Initial Catalog=FoodMart;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxBkywdd7T02l3Mo1qL2jHwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAtbb0Dm/lPvIVhR6sJIwO0KVWEi56VCC6sHwWfp0PtGQAAAAAOgAAAAAIAACAAAAD54njxwgt1Lyy5j5B6q4U106wdlIuhlSJr9HhhlmuHKBAAAADiNsvJNWfFUHq2ifxnxBJfQAAAAG9G59OvsGFlw17hKheKHp8ql6+Glafx1pooYMrogsz+OVjlOyKjFEI1DueNjWtPP+U2XlZabxZSY/OM+mldOdM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{FE83BE2D-5229-44FD-8DA2-7306D786E426}"
+      DTS:ObjectName="apa.di.unipi.it.MBD.masterbigdata">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=apa.di.unipi.it;User ID=masterbigdata;Initial Catalog=MBD;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxBkywdd7T02l3Mo1qL2jHwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADRB9L9d+xX7NZ2X+w3sRmPUoKE4tz+X8jV17ShzCcq9wAAAAAOgAAAAAIAACAAAADNcpTMmTbVFFW9/yF2hoiwtjMpFHQ3qoded9bgBvb9+xAAAAD32tyyL2UdexN2h1XX/CQaQAAAAGoE+hNhqewfTTknrgSa2IDSAcsjdngm1Ohrn/J7wJ8zGs46swGrGuPhS1zYrd9NpVHQ3lpjWBpjs4icWTzWIM8</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestione connessione file flat]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EFDD62F2-B32A-48C4-A243-0B2024AE7301}"
+      DTS:ObjectName="Gestione connessione file flat">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1040"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\domenico\Desktop\esercizi sql\DBMI\output2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id"
+              DTS:DTSID="{73BEBDB9-7B69-4716-B257-C96ADD576A5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="total_gain"
+              DTS:DTSID="{6B57BDB4-46EA-4B84-A8DD-EA5D8CD84268}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestione connessione file flat 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F7778E79-25AD-45BA-936E-4245FD8F2068}"
+      DTS:ObjectName="Gestione connessione file flat 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1040"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\domenico\Desktop\esercizi sql\DBMI\output3.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id"
+              DTS:DTSID="{049E5847-2B0C-46CD-8785-5F9BB8B2A302}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id (1)"
+              DTS:DTSID="{AF5FBDEB-47FC-4DE1-8EDE-CE8AF8C8EAD3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestione connessione file flat 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{95080597-5A26-497F-A372-C0FFA6EB3415}"
+      DTS:ObjectName="Gestione connessione file flat 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1040"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\domenico\Desktop\esercizi sql\DBMI\output4.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id"
+              DTS:DTSID="{11C33C2B-00D5-4A08-BF32-7A71C7C1CDA9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id (1)"
+              DTS:DTSID="{D0B626BC-1D7B-4048-B1E8-4D87AA835FB5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_name"
+              DTS:DTSID="{A254A21D-E85F-4524-B471-2091311C30A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="total_gain"
+              DTS:DTSID="{C2705924-F327-476F-B7CC-31DF444E5452}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestione connessione file flat 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BE062F0E-1E88-4A39-AAAD-2DF02679326F}"
+      DTS:ObjectName="Gestione connessione file flat 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1040"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\domenico\Desktop\esercizi sql\DBMI\output2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id"
+              DTS:DTSID="{DE719007-68ED-4F66-8480-E45CA7479279}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="total_gain"
+              DTS:DTSID="{1E92A2EB-5519-4244-A6A6-CFC7F6B906B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_name"
+              DTS:DTSID="{ED833E66-3FF2-4684-A917-EA40B0FBC416}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestione connessione file flat 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{FCCD5342-336A-4E67-98E4-BCE16C181FAC}"
+      DTS:ObjectName="Gestione connessione file flat 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1040"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\domenico\Desktop\esercizi sql\DBMI\output2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id total_gain"
+              DTS:DTSID="{98734EE0-9778-42C3-8C71-891D999F182F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="total_gain"
+              DTS:DTSID="{F5C37A58-607E-404C-99EE-D980E6A4BCA2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Attività Flusso di dati"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Attività Flusso di dati"
+      DTS:DTSID="{FFB90164-B282-49F2-A537-F731FAEF0537}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Attività Flusso di dati"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Attività Flusso di dati\Aggiorna Customer"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destinazione OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;4"
+              description="Destinazione OLE DB"
+              name="Aggiorna Customer"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Numero di secondi prima del timeout di un comando. Il valore 0 indica nessun timeout."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica il nome dell'oggetto di database utilizzato per aprire un set di righe."
+                  name="OpenRowset">[masterbigdata].[guttilla_customer_dim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica la variabile contenente il nome dell'oggetto di database utilizzato per aprire un set di righe."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL da eseguire."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la tabella codici della colonna da utilizzare quando l'origine dati non rende disponibili informazioni sulla tabella codici."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forza l'utilizzo del valore della proprietà DefaultCodePage per la descrizione di dati di tipo carattere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la modalità utilizzata per accedere al database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se i valori specificati per le colonne Identity verranno copiati nella destinazione. Se false, i valori delle colonne Identity verranno generati automaticamente nella destinazione. Applicabile solo se è abilitato il caricamento rapido."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se per le colonne con valori Null, tali valori verranno inseriti nella destinazione. Se false, per le colonne con valori Null verranno inseriti i valori predefiniti corrispondenti nella destinazione. Applicabile solo se è attivato il caricamento rapido."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica le opzioni da utilizzare con il caricamento rapido. Applicabile solo se è attivato il caricamento rapido."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica se vengono eseguiti commit durante l'inserimento dei dati. Il valore 0 indica che verrà eseguito un solo commit al termine dell'inserimento dei dati. Applicabile solo se è attivato il caricamento rapido."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Attività Flusso di dati\Aggiorna Customer.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  description="Connessione di run-time OLE DB utilizzata per accedere al database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB]"
+                  errorOrTruncationOperation="Inserimento"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Input destinazione OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].Columns[customer_id_dimension]"
+                      cachedDataType="i4"
+                      cachedName="customer_id_dimension"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[customer_id]"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_id_dimension]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].Columns[new_customer_name]"
+                      cachedDataType="wstr"
+                      cachedLength="151"
+                      cachedName="new_customer_name"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[customer_name]"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_customer_name]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].Columns[new_address]"
+                      cachedDataType="wstr"
+                      cachedLength="304"
+                      cachedName="new_address"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[address]"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_address]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].Columns[date_today]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="date_today"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[date_start]"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[date_today]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[surrogate_key]"
+                      dataType="i4"
+                      name="surrogate_key" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[customer_name]"
+                      dataType="wstr"
+                      length="151"
+                      name="customer_name" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[address]"
+                      dataType="wstr"
+                      length="304"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[date_start]"
+                      dataType="dbDate"
+                      name="date_start" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB].ExternalColumns[date_end]"
+                      dataType="dbDate"
+                      name="date_end" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Aggiorna Customer.Outputs[Output errori destinazione OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Output errori destinazione OLE DB"
+                  synchronousInputId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Outputs[Output errori destinazione OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Aggiorna Customer.Outputs[Output errori destinazione OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Customer.Outputs[Output errori destinazione OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Aggiorna Customer.Outputs[Output errori destinazione OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Aggiorna Nome"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;2"
+              description="Esegue un'istruzione SQL per ogni riga di un flusso di dati. Ad esempio, chiamare una stored procedure 'new employee setup' per ogni riga della tabella 'new employees'. Nota: l'esecuzione di un'istruzione SQL per ogni riga di un flusso di dati di grandi dimensioni può richiedere molto tempo."
+              name="Aggiorna Nome"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Numero di secondi prima del timeout di un comando. Il valore 0 indica nessun timeout."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL da eseguire."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">update guttilla_customer_dim
+set customer_name = ?
+where customer_id = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la tabella codici della colonna da utilizzare quando l'origine dati non rende disponibili informazioni sulla tabella codici."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Attività Flusso di dati\Aggiorna Nome.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  description="Connessione di run-time OLE DB utilizzata per accedere al database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB]"
+                  errorOrTruncationOperation="Esecuzione comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Input comando OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB].Columns[new_customer_name]"
+                      cachedDataType="wstr"
+                      cachedLength="151"
+                      cachedName="new_customer_name"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_customer_name]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB].ExternalColumns[Param_1]"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB].ExternalColumns[Param_0]"
+                      dataType="wstr"
+                      length="151"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informazioni sui parametri. Corrisponde ai valori DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informazioni sui parametri. Corrisponde ai valori DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Aggiorna Nome.Outputs[Output comando OLE DB]"
+                  exclusionGroup="1"
+                  name="Output comando OLE DB"
+                  synchronousInputId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Aggiorna Nome.Outputs[Output errori comando OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Output errori comando OLE DB"
+                  synchronousInputId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Nome.Outputs[Output errori comando OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Aggiorna Nome.Outputs[Output errori comando OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Aggiorna Nome.Outputs[Output errori comando OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Aggiorna Nome.Outputs[Output errori comando OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Colonna derivata"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Colonna derivata;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;0"
+              description="Crea nuovi valori di colonna applicando espressioni alle colonne di input della trasformazione. Creare nuove colonne oppure sovrascrivere quelle esistenti. Ad esempio, concatenare i valori delle colonne 'first name' e 'last name' per creare una colonna 'full name'."
+              name="Colonna derivata"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata]"
+                  description="Input della trasformazione Colonna derivata"
+                  name="Input colonna derivata">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata].Columns[lname]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="lname"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[lname]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata].Columns[fname]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="fname"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[fname]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata].Columns[address1]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="address1"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[address1]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata].Columns[city]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="city"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[city]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata].Columns[postal_code]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="postal_code"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[postal_code]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata].Columns[state_province]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="state_province"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[state_province]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata].Columns[country]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="country"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[country]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata]"
+                  description="Output predefinito della trasformazione Colonna derivata"
+                  exclusionGroup="1"
+                  name="Output colonna derivata"
+                  synchronousInputId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_customer_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Calcolo"
+                      errorRowDisposition="FailComponent"
+                      length="151"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_customer_name]"
+                      name="new_customer_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Espressione colonna derivata"
+                          name="Expression">#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[lname]} + " " + #{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[fname]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Espressione descrittiva colonna derivata"
+                          expressionType="Notify"
+                          name="FriendlyExpression">lname + " " + fname</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_address]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Calcolo"
+                      errorRowDisposition="FailComponent"
+                      length="304"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_address]"
+                      name="new_address"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Espressione colonna derivata"
+                          name="Expression">#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[address1]} + " " + #{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[city]} + " " + #{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[state_province]} + " " + #{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[postal_code]} + " " + #{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[country]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Espressione descrittiva colonna derivata"
+                          expressionType="Notify"
+                          name="FriendlyExpression">address1 + " " + city + " " + state_province + " " + postal_code + " " + country</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[date_today]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Calcolo"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[date_today]"
+                      name="date_today"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Espressione colonna derivata"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Espressione descrittiva colonna derivata"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output errori colonna derivata]"
+                  description="Output degli errori della trasformazione Colonna derivata"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Output errori colonna derivata"
+                  synchronousInputId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output errori colonna derivata].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output errori colonna derivata].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output errori colonna derivata].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output errori colonna derivata].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Destinazione OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destinazione OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;4"
+              description="Destinazione OLE DB"
+              name="Destinazione OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Numero di secondi prima del timeout di un comando. Il valore 0 indica nessun timeout."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica il nome dell'oggetto di database utilizzato per aprire un set di righe."
+                  name="OpenRowset">[masterbigdata].[guttilla_customer_dim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica la variabile contenente il nome dell'oggetto di database utilizzato per aprire un set di righe."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL da eseguire."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la tabella codici della colonna da utilizzare quando l'origine dati non rende disponibili informazioni sulla tabella codici."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forza l'utilizzo del valore della proprietà DefaultCodePage per la descrizione di dati di tipo carattere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la modalità utilizzata per accedere al database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se i valori specificati per le colonne Identity verranno copiati nella destinazione. Se false, i valori delle colonne Identity verranno generati automaticamente nella destinazione. Applicabile solo se è abilitato il caricamento rapido."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se per le colonne con valori Null, tali valori verranno inseriti nella destinazione. Se false, per le colonne con valori Null verranno inseriti i valori predefiniti corrispondenti nella destinazione. Applicabile solo se è attivato il caricamento rapido."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica le opzioni da utilizzare con il caricamento rapido. Applicabile solo se è attivato il caricamento rapido."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica se vengono eseguiti commit durante l'inserimento dei dati. Il valore 0 indica che verrà eseguito un solo commit al termine dell'inserimento dei dati. Applicabile solo se è attivato il caricamento rapido."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Attività Flusso di dati\Destinazione OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  description="Connessione di run-time OLE DB utilizzata per accedere al database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB]"
+                  errorOrTruncationOperation="Inserimento"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Input destinazione OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[customer_id]"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_id]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].Columns[new_customer_name]"
+                      cachedDataType="wstr"
+                      cachedLength="151"
+                      cachedName="new_customer_name"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[customer_name]"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_customer_name]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].Columns[new_address]"
+                      cachedDataType="wstr"
+                      cachedLength="304"
+                      cachedName="new_address"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[address]"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_address]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].Columns[date_today]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="date_today"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[date_start]"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[date_today]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[surrogate_key]"
+                      dataType="i4"
+                      name="surrogate_key" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[customer_name]"
+                      dataType="wstr"
+                      length="151"
+                      name="customer_name" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[address]"
+                      dataType="wstr"
+                      length="304"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[date_start]"
+                      dataType="dbDate"
+                      name="date_start" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB].ExternalColumns[date_end]"
+                      dataType="dbDate"
+                      name="date_end" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Destinazione OLE DB.Outputs[Output errori destinazione OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Output errori destinazione OLE DB"
+                  synchronousInputId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Outputs[Output errori destinazione OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Destinazione OLE DB.Outputs[Output errori destinazione OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Destinazione OLE DB.Outputs[Output errori destinazione OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Destinazione OLE DB.Outputs[Output errori destinazione OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Dimension"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origine OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;7"
+              description="Origine OLE DB"
+              name="Dimension"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Numero di secondi prima del timeout di un comando. Il valore 0 indica nessun timeout."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica il nome dell'oggetto di database utilizzato per aprire un set di righe."
+                  name="OpenRowset">[masterbigdata].[guttilla_customer_dim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica la variabile contenente il nome dell'oggetto di database utilizzato per aprire un set di righe."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL da eseguire."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select*
+from guttilla_customer_dim
+where date_end IS NULL</property>
+                <property
+                  dataType="System.String"
+                  description="Variabile che contiene il comando SQL da eseguire."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la tabella codici della colonna da utilizzare quando l'origine dati non rende disponibili informazioni sulla tabella codici."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forza l'utilizzo del valore della proprietà DefaultCodePage per la descrizione di dati di tipo carattere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la modalità utilizzata per accedere al database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Mapping tra i parametri nel comando SQL e le variabili."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Attività Flusso di dati\Dimension.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  description="Connessione di run-time OLE DB utilizzata per accedere al database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB]"
+                  name="Output origine OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[surrogate_key]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[surrogate_key]"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[surrogate_key]"
+                      name="surrogate_key"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[customer_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[customer_id]"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[customer_id]"
+                      name="customer_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[customer_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[customer_name]"
+                      length="151"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[customer_name]"
+                      name="customer_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[address]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[address]"
+                      length="304"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[address]"
+                      name="address"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[date_start]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[date_start]"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[date_start]"
+                      name="date_start"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[date_end]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[date_end]"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[date_end]"
+                      name="date_end"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[surrogate_key]"
+                      dataType="i4"
+                      name="surrogate_key" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[customer_name]"
+                      dataType="wstr"
+                      length="151"
+                      name="customer_name" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[address]"
+                      dataType="wstr"
+                      length="304"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[date_start]"
+                      dataType="dbDate"
+                      name="date_start" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].ExternalColumns[date_end]"
+                      dataType="dbDate"
+                      name="date_end" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB]"
+                  isErrorOut="true"
+                  name="Output errori origine OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[surrogate_key]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[surrogate_key]"
+                      name="surrogate_key" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[customer_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[customer_id]"
+                      name="customer_id" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[customer_name]"
+                      dataType="wstr"
+                      length="151"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[customer_name]"
+                      name="customer_name" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[address]"
+                      dataType="wstr"
+                      length="304"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[address]"
+                      name="address" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[date_start]"
+                      dataType="dbDate"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[date_start]"
+                      name="date_start" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[date_end]"
+                      dataType="dbDate"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[date_end]"
+                      name="date_end" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output errori origine OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Merge join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;1"
+              description="Combina due flussi di dati ordinati in uno solo tramite join di tipo FULL, LEFT o INNER. Questa trasformazione è consigliata quando i flussi di dati possono essere ordinati alle relative origini."
+              name="Merge join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il tipo di join da eseguire."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il numero di colonne nella chiave di ordinamento."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se i valori Null vengono considerati come valori uguali."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indica il numero massimo di buffer richiesti per input prima dell'attivazione del blocco."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro]"
+                  hasSideEffects="true"
+                  name="Input merge join sinistro">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[customer_id]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[lname]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="lname"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[lname]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[fname]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="fname"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[fname]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[address1]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="address1"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[address1]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[city]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="city"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[city]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[postal_code]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="postal_code"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[postal_code]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[state_province]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="state_province"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[state_province]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[country]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="country"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[country]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro]"
+                  hasSideEffects="true"
+                  name="Input merge join destro">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[customer_id]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[surrogate_key]"
+                      cachedDataType="i4"
+                      cachedName="surrogate_key"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[surrogate_key]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[customer_name]"
+                      cachedDataType="wstr"
+                      cachedLength="151"
+                      cachedName="customer_name"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[customer_name]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[address]"
+                      cachedDataType="wstr"
+                      cachedLength="304"
+                      cachedName="address"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[address]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[date_start]"
+                      cachedDataType="dbDate"
+                      cachedName="date_start"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[date_start]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[date_end]"
+                      cachedDataType="dbDate"
+                      cachedName="date_end"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[date_end]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join]"
+                  isSorted="true"
+                  name="Output merge join">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_id_dimension]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_id_dimension]"
+                      name="customer_id_dimension">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[customer_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_id]"
+                      name="customer_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[customer_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[lname]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[lname]"
+                      name="lname">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[lname]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[fname]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[fname]"
+                      name="fname">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[fname]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[address1]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[address1]"
+                      name="address1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[address1]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[city]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[city]"
+                      name="city">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[city]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[postal_code]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[postal_code]"
+                      name="postal_code">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[postal_code]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[state_province]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[state_province]"
+                      name="state_province">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[state_province]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[country]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[country]"
+                      name="country">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro].Columns[country]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[surrogate_key]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[surrogate_key]"
+                      name="surrogate_key">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[surrogate_key]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_name]"
+                      dataType="wstr"
+                      length="151"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_name]"
+                      name="customer_name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[customer_name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[address]"
+                      dataType="wstr"
+                      length="304"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[address]"
+                      name="address">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[address]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[date_start]"
+                      dataType="dbDate"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[date_start]"
+                      name="date_start">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[date_start]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[date_end]"
+                      dataType="dbDate"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[date_end]"
+                      name="date_end">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Colonna di input associata a questa colonna di output"
+                          name="InputColumnID">#{Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro].Columns[date_end]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Operational"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origine OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;7"
+              description="Origine OLE DB"
+              name="Operational"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Numero di secondi prima del timeout di un comando. Il valore 0 indica nessun timeout."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica il nome dell'oggetto di database utilizzato per aprire un set di righe."
+                  name="OpenRowset">[dbo].[operational_customer_info]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifica la variabile contenente il nome dell'oggetto di database utilizzato per aprire un set di righe."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL da eseguire."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variabile che contiene il comando SQL da eseguire."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la tabella codici della colonna da utilizzare quando l'origine dati non rende disponibili informazioni sulla tabella codici."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forza l'utilizzo del valore della proprietà DefaultCodePage per la descrizione di dati di tipo carattere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la modalità utilizzata per accedere al database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Mapping tra i parametri nel comando SQL e le variabili."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Attività Flusso di dati\Operational.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  description="Connessione di run-time OLE DB utilizzata per accedere al database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB]"
+                  name="Output origine OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[customer_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[customer_id]"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[customer_id]"
+                      name="customer_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[lname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[lname]"
+                      length="100"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[lname]"
+                      name="lname"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[fname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[fname]"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[fname]"
+                      name="fname"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[address1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[address1]"
+                      length="100"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[address1]"
+                      name="address1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[city]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[city]"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[city]"
+                      name="city"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[postal_code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[postal_code]"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[postal_code]"
+                      name="postal_code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[state_province]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[state_province]"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[state_province]"
+                      name="state_province"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversione"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[country]"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[account_num]"
+                      dataType="r8"
+                      name="account_num" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[lname]"
+                      dataType="wstr"
+                      length="100"
+                      name="lname" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[fname]"
+                      dataType="wstr"
+                      length="50"
+                      name="fname" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[mi]"
+                      dataType="wstr"
+                      length="20"
+                      name="mi" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[address1]"
+                      dataType="wstr"
+                      length="100"
+                      name="address1" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[address2]"
+                      dataType="wstr"
+                      length="100"
+                      name="address2" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[address3]"
+                      dataType="wstr"
+                      length="100"
+                      name="address3" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[address4]"
+                      dataType="wstr"
+                      length="100"
+                      name="address4" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[city]"
+                      dataType="wstr"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[state_province]"
+                      dataType="wstr"
+                      length="50"
+                      name="state_province" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[postal_code]"
+                      dataType="wstr"
+                      length="50"
+                      name="postal_code" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[country]"
+                      dataType="wstr"
+                      length="50"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[customer_region_id]"
+                      dataType="i4"
+                      name="customer_region_id" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[phone1]"
+                      dataType="wstr"
+                      length="50"
+                      name="phone1" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[phone2]"
+                      dataType="wstr"
+                      length="50"
+                      name="phone2" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[birthdate]"
+                      dataType="dbTimeStamp"
+                      name="birthdate" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[marital_status]"
+                      dataType="wstr"
+                      length="1"
+                      name="marital_status" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[yearly_income]"
+                      dataType="wstr"
+                      length="50"
+                      name="yearly_income" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="1"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[total_children]"
+                      dataType="i2"
+                      name="total_children" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[num_children_at_home]"
+                      dataType="i2"
+                      name="num_children_at_home" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[education]"
+                      dataType="wstr"
+                      length="30"
+                      name="education" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[date_accnt_opened]"
+                      dataType="dbTimeStamp"
+                      name="date_accnt_opened" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[member_card]"
+                      dataType="wstr"
+                      length="50"
+                      name="member_card" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[occupation]"
+                      dataType="wstr"
+                      length="50"
+                      name="occupation" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[houseowner]"
+                      dataType="wstr"
+                      length="1"
+                      name="houseowner" />
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].ExternalColumns[num_cars_owned]"
+                      dataType="i2"
+                      name="num_cars_owned" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB]"
+                  isErrorOut="true"
+                  name="Output errori origine OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[customer_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[customer_id]"
+                      name="customer_id" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[lname]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[lname]"
+                      name="lname" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[fname]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[fname]"
+                      name="fname" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[address1]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[address1]"
+                      name="address1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[city]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[city]"
+                      name="city" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[postal_code]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[postal_code]"
+                      name="postal_code" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[state_province]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[state_province]"
+                      name="state_province" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[country]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output errori origine OLE DB].Columns[country]"
+                      name="country" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Ordinamento"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordinamento;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;1"
+              description="Ordina i dati di input in ordine crescente o decrescente quando non possono essere ordinati come la relativa origine. Ad esempio, ordinare i dati delle vendite per 'customer id' prima che vengano scritti in un file flat e recapitati a un altro reparto. Nota: questa trasformazione non è consigliata per i flussi di dati di grandi dimensioni."
+              name="Ordinamento"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se la trasformazione Ordinamento rimuove le righe con valori di ordinamento duplicati."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il numero massimo di thread da utilizzare per l'ordinamento."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento]"
+                  name="Input ordinamento">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[customer_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento].Columns[lname]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="lname"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[lname]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento].Columns[fname]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="fname"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[fname]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento].Columns[address1]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="address1"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[address1]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento].Columns[city]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="city"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[city]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento].Columns[postal_code]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="postal_code"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[postal_code]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento].Columns[state_province]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="state_province"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[state_province]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento].Columns[country]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="country"
+                      lineageId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[country]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento]"
+                  isSorted="true"
+                  name="Output ordinamento">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[customer_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[customer_id]"
+                      name="customer_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[customer_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[lname]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[lname]"
+                      name="lname">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[lname]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[fname]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[fname]"
+                      name="fname">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[fname]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[address1]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[address1]"
+                      name="address1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[address1]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[city]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[city]"
+                      name="city">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[city]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[postal_code]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[postal_code]"
+                      name="postal_code">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[postal_code]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[state_province]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[state_province]"
+                      name="state_province">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[state_province]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[country]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento].Columns[country]"
+                      name="country">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB].Columns[country]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Ordinamento 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordinamento;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;1"
+              description="Ordina i dati di input in ordine crescente o decrescente quando non possono essere ordinati come la relativa origine. Ad esempio, ordinare i dati delle vendite per 'customer id' prima che vengano scritti in un file flat e recapitati a un altro reparto. Nota: questa trasformazione non è consigliata per i flussi di dati di grandi dimensioni."
+              name="Ordinamento 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se la trasformazione Ordinamento rimuove le righe con valori di ordinamento duplicati."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica il numero massimo di thread da utilizzare per l'ordinamento."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Ordinamento 1.Inputs[Input ordinamento]"
+                  name="Input ordinamento">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Inputs[Input ordinamento].Columns[surrogate_key]"
+                      cachedDataType="i4"
+                      cachedName="surrogate_key"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[surrogate_key]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Inputs[Input ordinamento].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[customer_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Inputs[Input ordinamento].Columns[customer_name]"
+                      cachedDataType="wstr"
+                      cachedLength="151"
+                      cachedName="customer_name"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[customer_name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Inputs[Input ordinamento].Columns[address]"
+                      cachedDataType="wstr"
+                      cachedLength="304"
+                      cachedName="address"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[address]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Inputs[Input ordinamento].Columns[date_start]"
+                      cachedDataType="dbDate"
+                      cachedName="date_start"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[date_start]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Inputs[Input ordinamento].Columns[date_end]"
+                      cachedDataType="dbDate"
+                      cachedName="date_end"
+                      lineageId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[date_end]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica le opzioni di confronto per i dati di tipo carattere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifica il tipo di ordinamento della colonna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento]"
+                  isSorted="true"
+                  name="Output ordinamento">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[surrogate_key]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[surrogate_key]"
+                      name="surrogate_key">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[surrogate_key]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[customer_id]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[customer_id]"
+                      name="customer_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[customer_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[customer_name]"
+                      dataType="wstr"
+                      length="151"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[customer_name]"
+                      name="customer_name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[customer_name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[address]"
+                      dataType="wstr"
+                      length="304"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[address]"
+                      name="address">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[address]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[date_start]"
+                      dataType="dbDate"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[date_start]"
+                      name="date_start">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[date_start]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[date_end]"
+                      dataType="dbDate"
+                      lineageId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento].Columns[date_end]"
+                      name="date_end">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifica l'identificatore di derivazione della colonna di input associata a questa colonna di output."
+                          name="SortColumnId">#{Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB].Columns[date_end]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Suddivisione condizionale"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Suddivisione condizionale;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;0"
+              description="Indirizza righe di dati a output diversi a seconda del contenuto dei dati. Usare le condizioni (espressioni SSIS) per specificare le righe da indirizzare. Ad esempio, separare i record da eliminare da quelli pronti per essere caricati oppure indirizzare unicamente un subset di record."
+              name="Suddivisione condizionale"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale]"
+                  description="Input della trasformazione Suddivisione condizionale"
+                  name="Input suddivisione condizionale">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale].Columns[customer_id_dimension]"
+                      cachedDataType="i4"
+                      cachedName="customer_id_dimension"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_id_dimension]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale].Columns[customer_name]"
+                      cachedDataType="wstr"
+                      cachedLength="151"
+                      cachedName="customer_name"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_name]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale].Columns[new_customer_name]"
+                      cachedDataType="wstr"
+                      cachedLength="151"
+                      cachedName="new_customer_name"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_customer_name]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale].Columns[address]"
+                      cachedDataType="wstr"
+                      cachedLength="304"
+                      cachedName="address"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[address]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale].Columns[new_address]"
+                      cachedDataType="wstr"
+                      cachedLength="304"
+                      cachedName="new_address"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_address]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[New Customer]"
+                  description="Output 1 della trasformazione Suddivisione condizionale"
+                  errorOrTruncationOperation="Calcolo"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="New Customer"
+                  synchronousInputId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica l'espressione. Questa versione dell'espressione utilizza gli identificatori di derivazione anziché i nomi di colonna."
+                      name="Expression">[ISNULL](#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_id_dimension]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica la versione descrittiva dell'espressione. Questa versione dell'espressione utilizza i nomi di colonna."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(customer_id_dimension)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifica la posizione della condizione nell'elenco delle condizioni valutate dalla trasformazione. L'ordine di valutazione è crescente, dal valore più basso al più alto."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Name Changed]"
+                  description="Output 2 della trasformazione Suddivisione condizionale"
+                  errorOrTruncationOperation="Calcolo"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Name Changed"
+                  synchronousInputId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica l'espressione. Questa versione dell'espressione utilizza gli identificatori di derivazione anziché i nomi di colonna."
+                      name="Expression">#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[customer_name]} != #{Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_customer_name]}</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica la versione descrittiva dell'espressione. Questa versione dell'espressione utilizza i nomi di colonna."
+                      expressionType="Notify"
+                      name="FriendlyExpression">customer_name != new_customer_name</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifica la posizione della condizione nell'elenco delle condizioni valutate dalla trasformazione. L'ordine di valutazione è crescente, dal valore più basso al più alto."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Address Changed]"
+                  description="Output 3 della trasformazione Suddivisione condizionale"
+                  errorOrTruncationOperation="Calcolo"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Address Changed"
+                  synchronousInputId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica l'espressione. Questa versione dell'espressione utilizza gli identificatori di derivazione anziché i nomi di colonna."
+                      name="Expression">#{Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[address]} != #{Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[new_address]}</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifica la versione descrittiva dell'espressione. Questa versione dell'espressione utilizza i nomi di colonna."
+                      expressionType="Notify"
+                      name="FriendlyExpression">address != new_address</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifica la posizione della condizione nell'elenco delle condizioni valutate dalla trasformazione. L'ordine di valutazione è crescente, dal valore più basso al più alto."
+                      name="EvaluationOrder">2</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Output predefinito suddivisione condizionale]"
+                  description="Output predefinito per la trasformazione Suddivisione condizionale"
+                  exclusionGroup="1"
+                  name="Output predefinito suddivisione condizionale"
+                  synchronousInputId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Output errori suddivisione condizionale]"
+                  description="Output degli errori per la trasformazione Suddivisione condizionale"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Output errori suddivisione condizionale"
+                  synchronousInputId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Output errori suddivisione condizionale].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Output errori suddivisione condizionale].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Output errori suddivisione condizionale].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Output errori suddivisione condizionale].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Attività Flusso di dati\Update Close surrogate key"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tutti i diritti sono riservati; http://www.microsoft.com/sql/support;2"
+              description="Esegue un'istruzione SQL per ogni riga di un flusso di dati. Ad esempio, chiamare una stored procedure 'new employee setup' per ogni riga della tabella 'new employees'. Nota: l'esecuzione di un'istruzione SQL per ogni riga di un flusso di dati di grandi dimensioni può richiedere molto tempo."
+              name="Update Close surrogate key"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Numero di secondi prima del timeout di un comando. Il valore 0 indica nessun timeout."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL da eseguire."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">update guttilla_customer_dim
+set date_end = ?
+where surrogate_key = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifica la tabella codici della colonna da utilizzare quando l'origine dati non rende disponibili informazioni sulla tabella codici."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Attività Flusso di dati\Update Close surrogate key.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[apa.di.unipi.it.MBD.masterbigdata]"
+                  description="Connessione di run-time OLE DB utilizzata per accedere al database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB]"
+                  errorOrTruncationOperation="Esecuzione comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Input comando OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB].Columns[surrogate_key]"
+                      cachedDataType="i4"
+                      cachedName="surrogate_key"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB].ExternalColumns[Param_1]"
+                      lineageId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join].Columns[surrogate_key]" />
+                    <inputColumn
+                      refId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB].Columns[date_today]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="date_today"
+                      externalMetadataColumnId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata].Columns[date_today]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB].ExternalColumns[Param_0]"
+                      dataType="dbDate"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informazioni sui parametri. Corrisponde ai valori DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informazioni sui parametri. Corrisponde ai valori DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Attività Flusso di dati\Update Close surrogate key.Outputs[Output comando OLE DB]"
+                  exclusionGroup="1"
+                  name="Output comando OLE DB"
+                  synchronousInputId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Attività Flusso di dati\Update Close surrogate key.Outputs[Output errori comando OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Output errori comando OLE DB"
+                  synchronousInputId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Update Close surrogate key.Outputs[Output errori comando OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Update Close surrogate key.Outputs[Output errori comando OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Attività Flusso di dati\Update Close surrogate key.Outputs[Output errori comando OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Attività Flusso di dati\Update Close surrogate key.Outputs[Output errori comando OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Address Changed]"
+              endId="Package\Attività Flusso di dati\Update Close surrogate key.Inputs[Input comando OLE DB]"
+              name="Address Changed"
+              startId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Address Changed]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Name Changed]"
+              endId="Package\Attività Flusso di dati\Aggiorna Nome.Inputs[Input comando OLE DB]"
+              name="Name Changed"
+              startId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[Name Changed]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[New Customer]"
+              endId="Package\Attività Flusso di dati\Aggiorna Customer.Inputs[Input destinazione OLE DB]"
+              name="New Customer"
+              startId="Package\Attività Flusso di dati\Suddivisione condizionale.Outputs[New Customer]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Output colonna derivata]"
+              endId="Package\Attività Flusso di dati\Suddivisione condizionale.Inputs[Input suddivisione condizionale]"
+              name="Output colonna derivata"
+              startId="Package\Attività Flusso di dati\Colonna derivata.Outputs[Output colonna derivata]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Output comando OLE DB]"
+              endId="Package\Attività Flusso di dati\Destinazione OLE DB.Inputs[Input destinazione OLE DB]"
+              name="Output comando OLE DB"
+              startId="Package\Attività Flusso di dati\Update Close surrogate key.Outputs[Output comando OLE DB]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Output merge join]"
+              endId="Package\Attività Flusso di dati\Colonna derivata.Inputs[Input colonna derivata]"
+              name="Output merge join"
+              startId="Package\Attività Flusso di dati\Merge join.Outputs[Output merge join]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Output ordinamento]"
+              endId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join sinistro]"
+              name="Output ordinamento"
+              startId="Package\Attività Flusso di dati\Ordinamento.Outputs[Output ordinamento]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Output ordinamento1]"
+              endId="Package\Attività Flusso di dati\Merge join.Inputs[Input merge join destro]"
+              name="Output ordinamento"
+              startId="Package\Attività Flusso di dati\Ordinamento 1.Outputs[Output ordinamento]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Output origine OLE DB]"
+              endId="Package\Attività Flusso di dati\Ordinamento.Inputs[Input ordinamento]"
+              name="Output origine OLE DB"
+              startId="Package\Attività Flusso di dati\Operational.Outputs[Output origine OLE DB]" />
+            <path
+              refId="Package\Attività Flusso di dati.Paths[Output origine OLE DB1]"
+              endId="Package\Attività Flusso di dati\Ordinamento 1.Inputs[Input ordinamento]"
+              name="Output origine OLE DB"
+              startId="Package\Attività Flusso di dati\Dimension.Outputs[Output origine OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Questa sezione CDATA contiene le informazioni sul layout del pacchetto e include informazioni quali coordinate (x,y), larghezza e altezza.-->
+<!--Se si modifica manualmente la sezione e si commette un errore, è possibile eliminarla. -->
+<!--Sarà comunque possibile caricare manualmente il pacchetto, ma le informazioni precedenti sul layout verranno perse e gli elementi verranno nuovamente disposti nell'area di progettazione all'interno dell'apposita finestra.-->
+<Objects
+  Version="8">
+  <!--Ogni nodo seguente conterrà proprietà che non influiscono sul comportamento di runtime.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="177.6,41.6"
+          Id="Package\Attività Flusso di dati"
+          TopLeft="88.0000014986311,33.0352945809546" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Attività Flusso di dati">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="178.4,41.6"
+          Id="Package\Attività Flusso di dati\Destinazione OLE DB"
+          TopLeft="566.428581074793,486.176474181014" />
+        <NodeLayout
+          Size="140.8,41.6"
+          Id="Package\Attività Flusso di dati\Ordinamento"
+          TopLeft="155.238097881784,156.000002187841" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Attività Flusso di dati\Aggiorna Nome"
+          TopLeft="392.040823002946,469.092440428147" />
+        <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\Attività Flusso di dati\Colonna derivata"
+          TopLeft="139.074832300403,326.798884135052" />
+        <NodeLayout
+          Size="199.2,41.6"
+          Id="Package\Attività Flusso di dati\Suddivisione condizionale"
+          TopLeft="146.938778012556,399.394963584557" />
+        <NodeLayout
+          Size="128.8,41.6"
+          Id="Package\Attività Flusso di dati\Dimension"
+          TopLeft="360.000006130764,48.9411771569698" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Attività Flusso di dati\Merge join"
+          TopLeft="265.034018118945,257.086838339439" />
+        <NodeLayout
+          Size="134.4,41.6"
+          Id="Package\Attività Flusso di dati\Operational"
+          TopLeft="75.4285727131124,44.4549025842476" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Attività Flusso di dati\Ordinamento 1"
+          TopLeft="412.380959403758,149.88235504322" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Attività Flusso di dati\Aggiorna Customer"
+          TopLeft="75.1020420953064,493.445383789395" />
+        <NodeLayout
+          Size="209.6,41.6"
+          Id="Package\Attività Flusso di dati\Update Close surrogate key"
+          TopLeft="502.142865694299,384.470590401686" />
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Address Changed]"
+          TopLeft="346.138778012556,420.194963584557">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="156.004087681743,-14.9243731828712"
+              Start="0,0"
+              End="148.504087681743,-14.9243731828712">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="74.0020438408717,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="74.0020438408717,0"
+                    Point2="78.0020438408717,0"
+                    Point3="78.0020438408717,-4" />
+                  <mssgle:LineSegment
+                    End="78.0020438408717,-10.9243731828712" />
+                  <mssgle:CubicBezierSegment
+                    Point1="78.0020438408717,-10.9243731828712"
+                    Point2="78.0020438408717,-14.9243731828712"
+                    Point3="82.0020438408717,-14.9243731828712" />
+                  <mssgle:LineSegment
+                    End="148.504087681743,-14.9243731828712" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="38.9559891533717,1,78.092109375,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output origine OLE DB1]"
+          TopLeft="424.400006130764,90.5411771569698">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="63.1809532729945,59.3411778862501"
+              Start="0,0"
+              End="63.1809532729945,51.8411778862501">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.6705889431251" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.6705889431251"
+                    Point2="0,29.6705889431251"
+                    Point3="4,29.6705889431251" />
+                  <mssgle:LineSegment
+                    End="59.1809532729945,29.6705889431251" />
+                  <mssgle:CubicBezierSegment
+                    Point1="59.1809532729945,29.6705889431251"
+                    Point2="63.1809532729945,29.6705889431251"
+                    Point3="63.1809532729945,33.6705889431251" />
+                  <mssgle:LineSegment
+                    End="63.1809532729945,51.8411778862501" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output origine OLE DB]"
+          TopLeft="142.628572713112,86.0549025842476">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83.0095251686716,69.9450996035934"
+              Start="0,0"
+              End="83.0095251686716,62.4450996035934">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.9725498017967" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.9725498017967"
+                    Point2="0,34.9725498017967"
+                    Point3="4,34.9725498017967" />
+                  <mssgle:LineSegment
+                    End="79.0095251686716,34.9725498017967" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.0095251686716,34.9725498017967"
+                    Point2="83.0095251686716,34.9725498017967"
+                    Point3="83.0095251686716,38.9725498017967" />
+                  <mssgle:LineSegment
+                    End="83.0095251686716,62.4450996035934" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output ordinamento1]"
+          TopLeft="487.580959403758,191.48235504322">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-137.480274618147,65.6044832962195"
+              Start="0,0"
+              End="-137.480274618147,58.1044832962195">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.8826571731252" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.8826571731252"
+                    Point2="0,38.8826571731252"
+                    Point3="-4,38.8826571731252" />
+                  <mssgle:LineSegment
+                    End="-133.480274618147,38.8826571731252" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-133.480274618147,38.8826571731252"
+                    Point2="-137.480274618147,38.8826571731252"
+                    Point3="-137.480274618147,42.8826571731252" />
+                  <mssgle:LineSegment
+                    End="-137.480274618147,58.1044832962195" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output ordinamento]"
+          TopLeft="225.638097881784,197.600002187841">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83.9292535704936,59.4868361515983"
+              Start="0,0"
+              End="83.9292535704936,51.9868361515983">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.2568321581424" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.2568321581424"
+                    Point2="0,35.2568321581424"
+                    Point3="4,35.2568321581424" />
+                  <mssgle:LineSegment
+                    End="79.9292535704936,35.2568321581424" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.9292535704936,35.2568321581424"
+                    Point2="83.9292535704936,35.2568321581424"
+                    Point3="83.9292535704936,39.2568321581424" />
+                  <mssgle:LineSegment
+                    End="83.9292535704936,51.9868361515983" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output merge join]"
+          TopLeft="329.834018118945,298.686838339439">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-111.159185818542,28.1120457956127"
+              Start="0,0"
+              End="-111.159185818542,20.6120457956127">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.0560228978064" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.0560228978064"
+                    Point2="0,14.0560228978064"
+                    Point3="-4,14.0560228978064" />
+                  <mssgle:LineSegment
+                    End="-107.159185818542,14.0560228978064" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-107.159185818542,14.0560228978064"
+                    Point2="-111.159185818542,14.0560228978064"
+                    Point3="-111.159185818542,18.0560228978064" />
+                  <mssgle:LineSegment
+                    End="-111.159185818542,20.6120457956127" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output comando OLE DB]"
+          TopLeft="606.942865694299,426.070590401686">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.6857153804934,60.1058837793277"
+              Start="0,0"
+              End="48.6857153804934,52.6058837793277">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.0529418896639" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.0529418896639"
+                    Point2="0,30.0529418896639"
+                    Point3="4,30.0529418896639" />
+                  <mssgle:LineSegment
+                    End="44.6857153804934,30.0529418896639" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.6857153804934,30.0529418896639"
+                    Point2="48.6857153804934,30.0529418896639"
+                    Point3="48.6857153804934,34.0529418896639" />
+                  <mssgle:LineSegment
+                    End="48.6857153804934,52.6058837793277" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Output colonna derivata]"
+          TopLeft="218.674832300403,368.398884135052">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.8639457121538,30.9960794495051"
+              Start="0,0"
+              End="27.8639457121538,23.4960794495051">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.4980397247526" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.4980397247526"
+                    Point2="0,15.4980397247526"
+                    Point3="4,15.4980397247526" />
+                  <mssgle:LineSegment
+                    End="23.8639457121538,15.4980397247526" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.8639457121538,15.4980397247526"
+                    Point2="27.8639457121538,15.4980397247526"
+                    Point3="27.8639457121538,19.4980397247526" />
+                  <mssgle:LineSegment
+                    End="27.8639457121538,23.4960794495051" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[New Customer]"
+          TopLeft="214.672111345889,440.994963584557">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-54.3700692505829,52.4504202048379"
+              Start="0,0"
+              End="-54.3700692505829,44.9504202048379">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.2309270629942" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.2309270629942"
+                    Point2="0,21.2309270629942"
+                    Point3="-4,21.2309270629942" />
+                  <mssgle:LineSegment
+                    End="-50.3700692505829,21.2309270629942" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-50.3700692505829,21.2309270629942"
+                    Point2="-54.3700692505829,21.2309270629942"
+                    Point3="-54.3700692505829,25.2309270629942" />
+                  <mssgle:LineSegment
+                    End="-54.3700692505829,44.9504202048379" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-60.0737260315415,26.2309270629942,65.7773828125,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Attività Flusso di dati.Paths[Name Changed]"
+          TopLeft="278.405444679223,440.994963584557">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="190.035378323724,28.0974768435905"
+              Start="0,0"
+              End="190.035378323724,20.5974768435905">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.37332130401909" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.37332130401909"
+                    Point2="0,11.3733213040191"
+                    Point3="4,11.3733213040191" />
+                  <mssgle:LineSegment
+                    End="186.035378323724,11.3733213040191" />
+                  <mssgle:CubicBezierSegment
+                    Point1="186.035378323724,11.3733213040191"
+                    Point2="190.035378323724,11.3733213040191"
+                    Point3="190.035378323724,15.3733213040191" />
+                  <mssgle:LineSegment
+                    End="190.035378323724,20.5974768435905" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="60.9947008806118,16.3733213040191,68.0459765625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Attività Flusso di dati\Destinazione OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Attività Flusso di dati\Dimension">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Attività Flusso di dati\Operational">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Attività Flusso di dati\Aggiorna Customer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

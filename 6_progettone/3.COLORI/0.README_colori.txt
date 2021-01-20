@@ -1,0 +1,3 @@
+
+
+Analisi volta all'individuazione dei colori dominanti dei film, partendo dalla cattura di frames e passando poi al calcolo dei centroidi colore dei frame ottenuti.

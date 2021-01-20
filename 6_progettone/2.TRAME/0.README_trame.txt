@@ -1,0 +1,3 @@
+
+Analisi delle trame per cogliere le tematiche principali.
+Estrazione prima delle trame da Wikipedia e poi analisi delle stesse con la libreria NLTK e il corpus WordNet in particolare.

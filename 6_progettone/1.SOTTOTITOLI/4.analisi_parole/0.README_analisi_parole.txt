@@ -1,0 +1,4 @@
+
+
+Analisi del linguaggio in termini lessicali, volta alla ricerca di topic principali e al calcolo della rilevanza delle parole, nella ricerca di pattern tra i film analizzati su diverse dimensioni.
+
